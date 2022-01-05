@@ -1,0 +1,315 @@
+<html>
+	<head>
+	<title>Donut</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/style.css">
+	<link href="vendor/fontawesome/css/all.css" rel="stylesheet">
+	<script src="scripts/main.js"></script>
+	</head>
+	<body>
+		<div id="header-logo-back"></div>
+		<div id="page-header">
+			<p class="header-title">Donut</p>
+			<div id="header-logo">
+				<div class="header-logo-center">
+					<img src="img/donut_logo.svg" width="62px" height="62px"/>
+				</div>
+			</div>
+		</div>
+		<div id="black-background" onclick="abortPost()"></div>
+		<div id="content">
+			<div class="content-sidebar">
+				<div class="profile-small">
+					<div class="profile-small-header">
+						<div class="profile-small-header-datas">
+							<h1 class="profile-small-donutrate">734</h1>
+							<h2 class="profile-small-donutrate-text">Donut-Rate</h2>
+							
+							<div class="profile-small-pic-background">
+								<img src="img/profpic.jpg" class="profile-small-pic"/>
+							</div>
+						</div>
+					</div>
+					<a href="cattozie" class="profile-small-username">Cattozie Catto Cicae</a>
+					<div class="profile-small-data-bar">
+						<div class="profile-small-data-shitpost">
+							<p class="profile-data-bigtext">69k</p>
+							<p class="profile-data-smalltext">Crumbs</p>
+						</div>
+						<div class="profile-small-data-followers">
+							<p class="profile-data-bigtext">1.5m</p>
+							<p class="profile-data-smalltext">Followers</p>
+						</div>
+						<div class="profile-small-data-following">
+							<p class="profile-data-bigtext">4</p>
+							<p class="profile-data-smalltext">Following</p>
+						</div>
+					</div>
+				</div>
+				<div class="content-crumbers-sidebar">
+					<div class="crumbers-header">
+						<h2 class="crumbers-title">Random crumbers</h2>
+						<a class="crumbers-link" href="">See more</a>
+					</div>
+					<div class="content-crumbers-user">
+						<img src="img/profpic.jpg" class="profile-post-pic-small"/>
+						<div class="content-crumbers-datas">
+							<a href="cattozie" class="content-crumbers-username">Cattozie Catto Cicae</a>
+							<button class="content-crumbers-follow">Follow</button>
+						</div>
+					</div>
+					<div class="content-crumbers-user">
+						<img src="img/profpic2.jpg" class="profile-post-pic-small"/>
+						<div class="content-crumbers-datas">
+							<a href="stephenmiller04" class="content-crumbers-username">stephenmiller04</a>
+							<button class="content-crumbers-follow">Follow</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content-posts">
+				<div id="user-post" class="post-block">
+					<h2 class="create-post-title">Hi, Cattozie Catto Cicae!</h2>
+					<input type="text" onfocus="isPosting()" class="post-block-input-text" name="postcomment" placeholder="...wazzup?">
+					<div id="upload-buttons-hidden" class="upload-buttons">
+						<a class="fa fa-file-image post-pic-upload"></a>
+						<a class="fa fa-code post-code"></a>
+						<input type="file" class="upload-button-hide" name="fileupload" value="fileupload" id="fileupload">
+						<button class="send-post-button">Post</button>
+					</div>
+				</div>
+				<div class="profile-post">
+					<div class="profile-post-header">
+						<img src="img/profpic5.jpg" class="profile-post-pic-small"/>
+						<div class="profile-post-datas">
+							<a href="" class="restaurant profile-post-username">Kolbász faloda</a>
+							<p class="profile-post-date">2018. december 30. 1:39</p>
+						</div>
+						<div class="profile-post-data">
+							<p class="profile-post-data-text">Today's deal: Kapjon be egy 20 centist 800ft-ért!</p>
+						</div>
+						<div class="post-actions">
+							<i class="fa fa-cookie-bite give-cookie-button"></i>
+							<p class="counter-x">x</p>
+							<p class="give-cookie-counter">0</p>
+							<i class="fa fa-quote-right quote-button"></i>
+							<p class="counter-x">x</p>
+							<p class="quote-counter">0</p>
+						</div>
+					</div>
+				</div>
+				<div class="profile-post">
+					<div class="profile-post-header">
+						<img src="img/profpic4.png" class="profile-post-pic-small"/>
+						<div class="profile-post-datas">
+							<a href="" class="bot profile-post-username">Donut Bot</a>
+							<p class="profile-post-date">2018. december 30. 1:17</p>
+						</div>
+						<div class="profile-post-data">
+							<p class="profile-post-data-text">Hall0, i'm a basic bot. Beep boop.</p>
+						</div>
+						<div class="post-actions">
+							<i class="fa fa-cookie-bite give-cookie-button"></i>
+							<p class="counter-x">x</p>
+							<p class="give-cookie-counter">0</p>
+							<i class="fa fa-quote-right quote-button"></i>
+							<p class="counter-x">x</p>
+							<p class="quote-counter">0</p>
+						</div>
+					</div>
+				</div>
+				<div class="profile-post">
+					<div class="profile-post-header">
+						<img src="img/profpic3.jpg" class="profile-post-pic-small"/>
+						<div class="profile-post-datas">
+							<a href="" class="blogger profile-post-username">Blogger Duckié</a>
+							<p class="profile-post-date">2018. december 29. 20:13</p>
+						</div>
+						<div id="blog-post-data" class="profile-post-data-blogger">
+							<p class="profile-post-data-text">Lórum ipse és csillamos rechni javarészt rejtenge, bord. A ságos ill. a jormányokra szédő nyegősök hódámai cickó négy vagy éhelő kadtak, és garnálták a kvány adta lezéseket a felődményök a nyítálok relcsipéjénél tabánda, rogatnak, ménylés, cserel, mázsa fencs. A hatlan nyuszulás a fáros széradásokban is hamar beles rágos olommá rogtatózik csillék hompa ill. fanyós lemetés, fusztás a smény rega. A hancs rébres végén már beli, hogy az állott oságban is makozják a szolos olomot és negényet, sok dításban a sonság vipását súlyosítják át, és a közös észítő és bozás sizkel őrzet, fencs.</p>
+						</div>
+						<div class="post-actions">
+							<i class="fa fa-cookie-bite give-cookie-button"></i>
+							<p class="counter-x">x</p>
+							<p class="give-cookie-counter">0</p>
+							<i class="fa fa-quote-right quote-button"></i>
+							<p class="counter-x">x</p>
+							<p class="quote-counter">0</p>
+						</div>
+					</div>
+				</div>
+				<div id="blog-post-expander" class="profile-post-data-blogger-expand">
+					<a onclick="openPost()" class="profile-post-blogger-readmore">Read more</a>
+				</div>
+				<div class="profile-post">
+					<div class="profile-post-header">
+						<img src="img/profpic2.jpg" class="profile-post-pic-small"/>
+						<div class="profile-post-datas">
+							<a href="stephenmiller04" class="developer profile-post-username">stephenmiller04</a>
+							<p class="profile-post-date">2018. december 28. 23:20</p>
+						</div>
+						<div class="profile-post-data">
+							<code class="code-post">&lt;<code class="code pink">table</code><code class="code green"> class</code>=<code class="code yellow">"dont-use-tables"</code>&gt;Shame on me. Táblázatokat használtam.&lt;/<code class="code pink">table</code>&gt;</code>
+						</div>
+						<div class="post-actions">
+							<i class="fa fa-cookie-bite give-cookie-button"></i>
+							<p class="counter-x">x</p>
+							<p class="give-cookie-counter">0</p>
+							<i class="fa fa-comment comment-button"></i>
+							<p class="counter-x">x</p>
+							<p class="comment-counter">0</p>
+							<i class="fa fa-quote-right quote-button"></i>
+							<p class="counter-x">x</p>
+							<p class="quote-counter">0</p>
+						</div>
+						<div class="profile-post-line">
+						</div>
+						<div class="profile-post-footer">
+							<table>
+								<td>
+									<img src="img/profpic.jpg" class="profile-post-pic-smaller"/>
+								</td>
+								<td class="profile-post-input">
+									<input type="text" class="profile-post-comment" name="postcomment" placeholder="Type comment...">
+								</td>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="profile-post">
+					<div class="profile-post-header">
+						<img src="img/profpic.jpg" class="profile-post-pic-small"/>
+						<div class="profile-post-datas">
+							<a href="cattozie" class="shitter profile-post-username">Cattozie Catto Cicae</a>
+							<p class="profile-post-date">2018. december 28. 2:41</p>
+						</div>
+						<div class="profile-post-data">
+							<p class="profile-post-data-text">Other cats:</p>
+							<img src="img/testpic1.jpg" class="profile-post-pic"/>
+							<p class="profile-post-data-text">Me:</p>
+							<img src="img/testpic2.jpg" class="profile-post-pic"/>
+						</div>
+						<div class="post-actions">
+							<i class="fa fa-cookie-bite give-cookie-button"></i>
+							<p class="counter-x">x</p>
+							<p class="give-cookie-counter">0</p>
+							<i class="fa fa-comment comment-button"></i>
+							<p class="counter-x">x</p>
+							<p class="comment-counter">0</p>
+							<i class="fa fa-quote-right quote-button"></i>
+							<p class="counter-x">x</p>
+							<p class="quote-counter">0</p>
+						</div>
+						<div class="profile-post-line">
+						</div>
+						<div class="profile-post-footer">
+							<table>
+								<td>
+									<img src="img/profpic.jpg" class="profile-post-pic-smaller"/>
+								</td>
+								<td class="profile-post-input">
+									<input type="text" class="profile-post-comment" name="postcomment" placeholder="Type comment...">
+								</td>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="profile-post">
+					<div class="profile-post-header">
+						<img src="img/profpic.jpg" class="profile-post-pic-small"/>
+						<div class="profile-post-datas">
+							<a href="cattozie" class="shitter profile-post-username">Cattozie Catto Cicae</a>
+							<p class="profile-post-date">2018. december 28. 2:28</p>
+						</div>
+						<div class="profile-post-data">
+							<p class="profile-post-data-text">I can haz donut?</p>
+						</div>
+						<div class="post-actions">
+							<i class="fa fa-cookie-bite give-cookie-button"></i>
+							<p class="counter-x">x</p>
+							<p class="give-cookie-counter">0</p>
+							<i class="fa fa-comment comment-button"></i>
+							<p class="counter-x">x</p>
+							<p class="comment-counter">0</p>
+							<i class="fa fa-quote-right quote-button"></i>
+							<p class="counter-x">x</p>
+							<p class="quote-counter">0</p>
+						</div>
+						<div class="profile-post-line">
+						</div>
+						<div class="profile-post-footer">
+							<table>
+								<td>
+									<img src="img/profpic.jpg" class="profile-post-pic-smaller"/>
+								</td>
+								<td class="profile-post-input">
+									<input type="text" class="profile-post-comment" name="postcomment" placeholder="Type comment...">
+								</td>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="profile-post">
+					<div class="profile-post-header">
+						<img src="img/profpic.jpg" class="profile-post-pic-small"/>
+						<div class="profile-post-datas">
+							<a href="cattozie" class="shitter profile-post-username">Cattozie Catto Cicae</a>
+							<p class="profile-post-date">2018. december 28. 2:20</p>
+						</div>
+						<div class="profile-post-data">
+							<p class="profile-post-data-text">MEOWé</p>
+						</div>
+						<div class="post-actions">
+							<i class="fa fa-cookie-bite give-cookie-button"></i>
+							<p class="counter-x">x</p>
+							<p class="give-cookie-counter">0</p>
+							<i class="fa fa-comment comment-button"></i>
+							<p class="counter-x">x</p>
+							<p class="comment-counter">0</p>
+							<i class="fa fa-quote-right quote-button"></i>
+							<p class="counter-x">x</p>
+							<p class="quote-counter">0</p>
+						</div>
+						<div class="profile-post-line">
+						</div>
+						<div class="profile-post-footer">
+							<table>
+								<td>
+									<img src="img/profpic.jpg" class="profile-post-pic-smaller"/>
+								</td>
+								<td class="profile-post-input">
+									<input type="text" class="profile-post-comment" name="postcomment" placeholder="Type comment...">
+								</td>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content-about">
+				<div class="content-crumbers">
+					<div class="crumbers-header">
+						<h2 class="crumbers-title">Random crumbers</h2>
+						<a class="crumbers-link" href="">See more</a>
+					</div>
+					<div class="content-crumbers-user">
+						<img src="img/profpic.jpg" class="profile-post-pic-small"/>
+						<div class="content-crumbers-datas">
+							<a href="cattozie" class="content-crumbers-username">Cattozie Catto Cicae</a>
+							<button class="content-crumbers-follow">Follow</button>
+						</div>
+					</div>
+					<div class="content-crumbers-user">
+						<img src="img/profpic2.jpg" class="profile-post-pic-small"/>
+						<div class="content-crumbers-datas">
+							<a href="stephenmiller04" class="content-crumbers-username">stephenmiller04</a>
+							<button class="content-crumbers-follow">Follow</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

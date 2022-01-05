@@ -1,0 +1,346 @@
+@font-face {
+    font-family: signatra_normal;
+    src: url('fonts/Signatra.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: din_normal;
+    src: url('fonts/din_normal.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: din_medium;
+    src: url('fonts/din_medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: din_bold;
+    src: url('fonts/din_bold.ttf') format('truetype');
+}
+
+body {
+	margin: 0;
+	background: #323232;
+	font-family: din_normal;
+}
+
+#page-header {
+	width: 100%;
+	height: 50px;
+	background: #0092CC;
+	position: fixed;
+	box-shadow: 0px 0px 21px 0px #000000;
+	z-index: 1000;
+}
+
+.header-title {
+	font-family: signatra_normal;
+	margin: 0;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 3px;
+	color: white;
+}
+
+#header-logo {
+	background: #0092CC;
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+    margin-top: -50px;
+    position: absolute;
+    /*margin-left: 3px;*/
+    right: 10px;
+}
+
+#header-logo-back {
+	background: #0092CC;
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+    margin-top: 3px;
+    position: fixed;
+    /*margin-left: 3px;*/
+    box-shadow: -1px 7px 33px -6px #000000;
+    right: 10px;
+    z-index: 1000;
+}
+
+.header-logo-center {
+	width: 62px;
+    height: 62px;
+    margin: auto;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.profile-header {
+	height: 375px;
+	padding-top: 50px;
+	background: url(../img/headerbg.jpg) 0px;
+	background-size: cover;
+	position: relative;
+}
+
+.profile-header-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.profile-data-bar {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	background: #232323;
+}
+
+.profile-pic {
+	width: 200px;
+	height: 200px;
+	bottom: 0;
+	position: absolute;
+	-webkit-mask-box-image: url(../img/donut_crop.svg);
+  	mask-border: url(../img/donut_crop.svg);
+  	margin-bottom: 7px;
+    margin-left: 7px;
+}
+
+.profile-pic-background {
+	background: url(../img/donut_crop_bg.svg);
+	width: 215px;
+    height: 215px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+}
+
+.profile-username {
+	font-family: din_bold;
+    color: white;
+    font-size: 2.2em;
+    margin-left: 240px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 84px;
+    text-shadow: 0px 0px 11px #232323;
+}
+
+.profile-user-description {
+	font-family: din_normal;
+    color: white;
+    font-size: 1.1em;
+    margin-left: 240px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 60px;
+    text-shadow: 0px 0px 11px #232323;
+}
+
+.profile-data-shitpost {
+	height: 50px;
+    width: 55px;
+    margin-left: 240px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.profile-data-followers {
+	height: 50px;
+    width: 68px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.profile-data-following {
+	height: 50px;
+    width: 65px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.profile-data-donutrate {
+    height: 50px;
+    width: 75px;
+    display: inline-block;
+}
+
+.profile-data-bigtext {
+	margin: 0;
+    text-align: center;
+    color: #2c90d1;
+    font-family: din_bold;
+    font-size: 1.4em;
+}
+
+.profile-data-smalltext {
+	margin: 0;
+    text-align: center;
+    color: #a7a7a7;
+    font-size: 0.9em;
+}
+
+/*Post*/
+.profile-post {
+	width: 400px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background: #232323;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #171717;
+    border: 1px solid black;
+}
+
+.profile-post-header {
+	padding-top: 5px;
+}
+
+.profile-post-pic-small {
+	width: 50px;
+	height: 50px;
+	bottom: 0;
+	-webkit-mask-box-image: url(../img/donut_crop.svg);
+  	mask-border: url(../img/donut_crop.svg);
+    margin-left: 5px;
+}
+
+.profile-post-username {
+	text-decoration: none;
+    color: #2c90d1;
+    font-size: 1.1em;
+    font-weight: 700;
+    vertical-align: top;
+}
+
+.profile-post-username:hover {
+	color: #70beff;
+	cursor: pointer;
+}
+
+.profile-post-datas {
+	vertical-align: top;
+	margin-left: 5px;
+	margin-top: 5px;
+	display: inline-block;
+}
+
+.profile-post-date {
+	margin: 0;
+    color: #a7a7a7;
+    font-size: 0.9em;
+}
+
+.profile-post-data {
+	padding: 5px;
+	padding-bottom: 10px;
+	color: white;
+	font-size: 1.2em;
+}
+
+.profile-post-data-text {
+	margin: 0;
+}
+
+.profile-post-line {
+	width: 100%;
+	height: 2px;
+	background-color: #174e71;
+}
+
+.profile-post-footer {
+	border-top: 2px white;
+	height: 40px;
+	padding: 5px;
+}
+
+.profile-post-pic-smaller {
+	width: 40px;
+	height: 40px;
+	bottom: 0;
+	-webkit-mask-box-image: url(../img/donut_crop.svg);
+  	mask-border: url(../img/donut_crop.svg);
+}
+
+.profile-post-comment {
+	height: 35px;
+    vertical-align: top;
+    margin-top: 2px;
+    margin-left: 5px;
+    font-size: 1.1em;
+    border: solid 1px #1c4d74;
+    border-radius: 5px;
+    background: #292929;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    outline: none;
+    width: 87%;
+}
+
+.profile-post-pic {
+    object-fit: contain;
+    width: 390px;
+}
+
+/*responsiveshit*/
+
+@media (max-width: 570px) {
+    .profile-header {
+        height: 250px;
+    }
+
+    .profile-data-bar {
+        height: 100px;
+    }
+
+    .profile-data-shitpost {
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+
+    .profile-pic-background {
+        width: 115px;
+        height: 115px;
+        bottom: 50px;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 9px;
+        margin-left: 8px;
+    }
+
+    .profile-username {
+        margin-left: 130px;
+        font-size: 1.4em;
+        margin-bottom: 70px;
+    }
+
+    .profile-user-description {
+        margin-left: 130px;
+        font-size: 0.8em;
+        margin-bottom: 52px;
+    }
+}
+
+@media (max-width: 400px) {
+    .content-posts {
+        width: 300px;
+        margin-right: unset;
+    }
+
+    .profile-post {
+        width: 300px;
+    }
+
+    .profile-post-comment {
+        width: 83%;
+    }
+
+    .profile-post-pic {
+        width: 290px;
+    }
+}
